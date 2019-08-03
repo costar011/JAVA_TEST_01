@@ -26,7 +26,7 @@ public class DBconnection {
 			System.out.println("[INFO] oracle driver connent");
 
 			this.conn = DriverManager.getConnection(this.url, this.user, this.pass);
-			System.out.println("IFNO Complate Connection");
+			System.out.println("[INFO] Complate Connection");
 			this.stmt = conn.createStatement();
 		} catch (Exception e) {
 			System.out.println("fail to Oracle Driver Connect");
@@ -50,3 +50,4 @@ public class DBconnection {
 	}
 	
 }
+
